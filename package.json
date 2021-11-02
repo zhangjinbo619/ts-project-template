@@ -11,6 +11,8 @@
     "eslint": "eslint --fix src --ext .ts --max-warnings=0",
     "prettier:comment": "自动格式化 src 目录下的所有 .ts 文件",
     "prettier": "prettier --write \"src/**/*.ts\"",
+    "build:comment": "构建",
+    "build": "npm run eslint && npm run prettier && rm -rf lib && tsc --build",
     "commit:comment": "引导设置规范化的提交信息",
     "commit": "cz"
   },

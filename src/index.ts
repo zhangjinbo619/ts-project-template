@@ -1,8 +1,8 @@
-function init():void {
-    console.log('my first ts cli');
+function init(): void {
+  console.log('project init success');
 }
 
 init();
 module.exports = {
-    init
-}
+  init,
+};
